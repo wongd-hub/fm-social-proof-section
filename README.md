@@ -17,11 +17,11 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ## Overview
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./static/images/Screen Shot 2022-02-12 at 8.34.02 pm.png)
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/wongd-hub/fm-social-proof-section)
+- Live Site URL: [Vercel](https://fm-social-proof-section-six.vercel.app)
 
 ## My process
 ### Built with
@@ -31,6 +31,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - CSS Grid
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
+- [Framer Motion](https://www.framer.com/docs/) - Animation library
 
 ## Author
 
