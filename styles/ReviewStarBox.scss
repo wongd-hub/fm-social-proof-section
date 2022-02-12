@@ -1,0 +1,22 @@
+.review-star-box {
+    border-radius: 10px;
+    background-color: var(--light-grayish-magenta);
+    width: 30rem;
+    height: 3.5rem;
+    display: flex;
+    align-content: center;
+
+    &__stars {
+        padding: 0 2.3rem;
+        display: flex;
+        gap: 7px;
+        margin: auto 0; 
+    }
+
+    &__text {
+        font-weight: bold;
+        font-size: calc(14rem / 16);
+        padding-right: 2rem;
+        margin: auto 0;
+    }
+}
