@@ -1,9 +1,11 @@
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 
 import ReviewStarBox from '../components/ReviewStarBox'
 import TestimonialBox from '../components/TestimonialBox'
+import Notification from '../components/Notification'
 
 import coltonS from '../static/images/image-colton.jpg'
 import ireneR from '../static/images/image-irene.jpg'
@@ -38,6 +40,28 @@ const testimonials = [
 ]
 
 export default function Home() {
+
+  const [vsize, setVSize] = useState([0, 0]) // State used to track viewport size
+  const [unsupported, setUnsupp] = useState(undefined)
+
+  // Listen for window resize
+  useEffect(() => {
+    setVSize([window.innerWidth, window.innerHeight])
+    window.addEventListener('resize', () => {
+      setVSize([window.innerWidth, window.innerHeight])
+    });
+    return () => window.removeEventListener('resize', () => setVSize([window.innerWidth, window.innerHeight]));
+  }, []);
+
+    // Change state if window is certain size
+  useEffect(() => {
+    if (vsize[0] >= 1440 || vsize[0] <= 375) {
+      setUnsupp(false)
+    } else {
+      setUnsupp(true)
+    }
+  }, [vsize]);
+
   return (
     <div className="container">
       <Head>
@@ -48,6 +72,7 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"
         />
       </Head>
+      <Notification isDisplayed={unsupported} />
       <main>
         <div className="grid-container">
           <div className="top-section">

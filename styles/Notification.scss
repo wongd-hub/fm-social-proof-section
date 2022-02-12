@@ -1,0 +1,11 @@
+.notification {
+    border-radius: 10px;
+    background-color: var(--dark-grayish-magenta);
+    height: fit-content;
+    width: min(23rem, 80%);
+    position: fixed;
+    font-size: calc(14rem / 16);
+    padding: 1rem;
+    margin: 1rem;
+    right: 0;
+}

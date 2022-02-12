@@ -14,7 +14,6 @@
     margin-bottom: 2rem;
 
     &__icon {
-        // border: 1px;
         border-radius: 50%;
         overflow: hidden;
         width: 50px;
@@ -41,6 +40,11 @@
 
 }
 
-// .testimonial {
-//     line-height: 1.5rem;
-// }
+@media only screen and (max-width: 375px) {
+
+    .testimonial-box {
+        width: 100%;
+        height: fit-content;
+    }
+
+}

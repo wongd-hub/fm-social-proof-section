@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 @import './ReviewStarBox.scss';
 @import './TestimonialBox.scss';
+@import './Notification.scss';
 
 /* Global/Root Styling */
 :root {
@@ -36,7 +37,7 @@ a {
 
 /* Website */
 .container {
-  position: fixed;
+  position: absolute;
   z-index: -5;
   width: 100vw;
   height: 100vh;
@@ -130,6 +131,102 @@ a {
 
   &:nth-child(3) {
     margin-top: 6rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    position: absolute;
+    z-index: -5;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background: 
+      url('/static/images/bg-pattern-bottom-mobile.svg')  no-repeat right bottom,
+      url('/static/images/bg-pattern-top-mobile.svg')  no-repeat left top;
+  }
+
+  .grid-container {
+    margin: 4rem 2rem;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spiel {
+
+    width: 100%;
+    text-align: center;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &__summary {
+      line-height: 1.6rem;
+    }
+
+  }
+
+  .reviews {
+  
+    &__box {
+      position: relative;
+      align-items: center;
+      width: 100%;
+      // height: 100%;
+    }
+  
+  }
+
+  .review-star-box {
+  
+    margin: 1.2rem 0;
+    position: relative;
+    float: right;
+  
+    &:nth-child(1) {
+      margin: 0.5rem 0;
+    }
+  
+    &:nth-child(2) {
+      margin: 0.5rem 0;
+    }
+  
+    &:nth-child(3) {
+      margin: 0.5rem 0;
+    }
+  
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .testimonial-box {
+  
+  
+    &:nth-child(1) {
+      margin-top: 1rem;
+    }
+  
+    &:nth-child(2) {
+      margin-top: 1rem;
+    }
+  
+    &:nth-child(3) {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+  
   }
 
 }
