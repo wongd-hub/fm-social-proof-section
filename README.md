@@ -17,7 +17,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ## Overview
 ### Screenshot
 
-![](./public/Screen Shot 2022-02-12 at 8.34.02 pm.png)
+![](./Screen Shot 2022-02-12 at 8.34.02 pm.png)
 ### Links
 
 - Solution URL: [GitHub](https://github.com/wongd-hub/fm-social-proof-section)
